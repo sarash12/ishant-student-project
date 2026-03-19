@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About | Ishant Portfolio</title>
+
+  <!-- External CSS (Mandatory) -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Nunito:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Internal CSS (optional) -->
+  <style>
+    /* Internal CSS — about page specific */
+    .page-hero {
+      background: linear-gradient(135deg, #1a237e 0%, #3949ab 100%);
+      padding: 60px 24px 50px;
+      text-align: center;
+      color: #fff;
+    }
+    .page-hero h1 { color: #fff; margin-bottom: 10px; }
+    .page-hero p  { color: #c5cae9; }
+
+    .hobbies-list {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 14px;
+      margin-top: 12px;
+    }
+
+    .hobbies-list li {
+      background: #fff;
+      border: 1.5px solid #e8eaf6;
+      border-radius: 10px;
+      padding: 14px 18px;
+      font-weight: 600;
+      font-family: 'Poppins', sans-serif;
+      color: #1a237e;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: border-color 0.25s, transform 0.2s;
+    }
+
+    .hobbies-list li:hover {
+      border-color: #00bcd4;
+      transform: translateY(-2px);
+    }
+
+    /* Inline CSS example used on the quote block below */
+    .quote-block {
+      border-left: 4px solid #00bcd4;
+      padding: 16px 20px;
+      background: #f0f2ff;
+      border-radius: 0 10px 10px 0;
+      margin: 20px 0;
+    }
+
+    .quote-block p {
+      font-style: italic;
+      font-size: 1.05rem;
+      color: #283593;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav>
+      <a href="index.html" id="logo">Ish<span>ant</span></a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#education">Education</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">More</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- PAGE HERO -->
+  <div class="page-hero">
+    <h1>More About <span style="color:#00bcd4;">Ishant</span></h1>
+    <p>Hobbies, goals, and what drives me</p>
+  </div>
+
+  <!-- ABOUT CONTENT -->
+  <section>
+    <div class="section-title">
+      <h2>My <span class="text-accent">Story</span></h2>
+    </div>
+
+    <!-- article semantic tag -->
+    <article class="card" style="margin-bottom:28px;">
+      <h3>Who Am I?</h3>
+      <p style="margin-top:10px;">
+        I'm Ishant, a Class 10th student from Delhi with a deep passion for technology and
+        web development. Ever since I first learnt how websites are built using HTML and CSS,
+        I've been fascinated by the idea that a few lines of code can create beautiful,
+        functional experiences for people around the world.
+      </p>
+      <div class="quote-block">
+        <!-- Inline CSS used on this element as example -->
+        <p style="font-weight:600;">"Code is not just instructions for a computer — it's a creative language for humans."</p>
+      </div>
+      <p>
+        I believe in learning by doing, which is why I enjoy building real projects like
+        this portfolio. My goal is to continue developing my skills in web development and
+        eventually work in the tech industry.
+      </p>
+    </article>
+
+    <!-- HOBBIES (Unordered list - Mandatory) -->
+    <div class="section-title" style="text-align:left; margin-bottom:16px;">
+      <h2>Hobbies &amp; <span class="text-accent">Interests</span></h2>
+    </div>
+
+    <ul class="hobbies-list">
+      <li>💻 Coding</li>
+      <li>🎨 Digital Design</li>
+      <li>📚 Reading Tech Blogs</li>
+      <li>🎮 Gaming</li>
+      <li>📸 Photography</li>
+      <li>🎵 Music</li>
+      <li>⚽ Football</li>
+      <li>🌐 Exploring Internet</li>
+    </ul>
+  </section>
+
+  <!-- GOALS SECTION -->
+  <section style="background:#fff; max-width:100%; padding:48px 0;">
+    <div style="max-width:1100px; margin:0 auto; padding:0 24px;">
+      <div class="section-title">
+        <h2>My <span class="text-accent">Goals</span></h2>
+        <p>Where I see myself heading</p>
+      </div>
+
+      <!-- Ordered list (Mandatory - steps / goals) -->
+      <ol class="edu-list">
+        <li>
+          <h3>Score well in Class 10 Boards</h3>
+          <p>Focus on academics and achieve excellent results in the board examination.</p>
+        </li>
+        <li>
+          <h3>Master JavaScript</h3>
+          <p>After HTML &amp; CSS, learn JavaScript to make websites interactive.</p>
+        </li>
+        <li>
+          <h3>Build 5 Real Projects</h3>
+          <p>Create real-world websites and add them to my portfolio by end of 2025.</p>
+        </li>
+        <li>
+          <h3>Pursue Computer Science</h3>
+          <p>Take Computer Science in Class 11 and continue the web development journey.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- TABLE — Skills Summary -->
+  <section>
+    <div class="section-title">
+      <h2>Skills <span class="text-accent">Summary</span></h2>
+    </div>
+
+    <!-- Table (Mandatory HTML element) -->
+    <table class="details-table">
+      <thead>
+        <tr>
+          <th>Skill</th>
+          <th>Category</th>
+          <th>Level</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>HTML5</td>
+          <td>Web Development</td>
+          <td>⭐⭐⭐⭐</td>
+        </tr>
+        <tr>
+          <td>CSS3</td>
+          <td>Web Development</td>
+          <td>⭐⭐⭐⭐</td>
+        </tr>
+        <tr>
+          <td>Responsive Design</td>
+          <td>Web Development</td>
+          <td>⭐⭐⭐</td>
+        </tr>
+        <tr>
+          <td>Figma</td>
+          <td>UI/UX Design</td>
+          <td>⭐⭐⭐⭐</td>
+        </tr>
+        <tr>
+          <td>MS Office</td>
+          <td>Productivity</td>
+          <td>⭐⭐⭐⭐⭐</td>
+        </tr>
+        <tr>
+          <td>Problem Solving</td>
+          <td>Soft Skill</td>
+          <td>⭐⭐⭐⭐</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p style="font-size:1.1rem; font-weight:700; color:#fff; margin-bottom:6px;">Ishant</p>
+    <p style="font-size:0.88rem; margin-bottom:10px;">Class 10th B | Roll No. 6 | SoSE (HE21), Lajpat Nagar, Delhi</p>
+    <ul class="social-links">
+      <li><a href="https://github.com" target="_blank">GitHub</a></li>
+      <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <p style="font-size:0.82rem; margin-top:8px;">
+      &copy; 2025 Ishant. Built with <span style="color:#e53935;">&#9829;</span> using HTML &amp; CSS.
+    </p>
+  </footer>
+
+</body>
+</html>

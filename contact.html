@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Ishant Portfolio</title>
+
+  <!-- External CSS (Mandatory) -->
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Nunito:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Internal CSS (optional, as per requirement) -->
+  <style>
+    /* Internal CSS — page-specific styles for contact page */
+    .contact-hero {
+      background: linear-gradient(135deg, #1a237e 0%, #3949ab 100%);
+      padding: 60px 24px 50px;
+      text-align: center;
+      color: #fff;
+    }
+    .contact-hero h1 { color: #fff; margin-bottom: 10px; }
+    .contact-hero p  { color: #c5cae9; font-size: 1rem; }
+
+    .contact-info-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 18px;
+      margin-bottom: 36px;
+    }
+
+    .info-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 22px 18px;
+      text-align: center;
+      border: 1px solid #e8eaf6;
+      box-shadow: 0 4px 16px rgba(26,35,126,0.07);
+    }
+
+    .info-card .icon {
+      font-size: 2rem;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    .info-card h3 {
+      font-size: 0.95rem;
+      color: #283593;
+      margin-bottom: 4px;
+    }
+
+    .info-card p {
+      font-size: 0.88rem;
+      color: #90a4ae;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav>
+      <a href="index.html" id="logo">Ish<span>ant</span></a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#about">About</a></li>
+        <li><a href="index.html#education">Education</a></li>
+        <li><a href="index.html#skills">Skills</a></li>
+        <li><a href="index.html#gallery">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">More</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CONTACT HERO -->
+  <div class="contact-hero">
+    <h1>Contact <span style="color:#00bcd4;">Me</span></h1>
+    <p>Have a question or want to connect? I'd love to hear from you!</p>
+  </div>
+
+  <!-- CONTACT INFO CARDS -->
+  <section>
+    <div class="contact-info-grid">
+      <div class="info-card">
+        <span class="icon">📧</span>
+        <h3>Email</h3>
+        <p>ishant@example.com</p>
+      </div>
+      <div class="info-card">
+        <span class="icon">📍</span>
+        <h3>Location</h3>
+        <p>Delhi, India</p>
+      </div>
+      <div class="info-card">
+        <span class="icon">🏫</span>
+        <h3>School</h3>
+        <p>Dr. B.R. Ambedkar School of Specialized Excellence (HE21), Lajpat Nagar</p>
+      </div>
+      <div class="info-card">
+        <span class="icon">🔗</span>
+        <h3>Social</h3>
+        <!-- External links with <a> tag (Mandatory) -->
+        <p>
+          <a href="https://github.com" target="_blank" style="color:#1a237e;">GitHub</a> &nbsp;|&nbsp;
+          <a href="https://linkedin.com" target="_blank" style="color:#1a237e;">LinkedIn</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- CONTACT FORM (Mandatory: Name, Email, Message, Submit) -->
+    <div id="contact-section">
+      <div class="inner">
+        <div class="section-title">
+          <h2>Send a <span class="text-accent">Message</span></h2>
+          <p>Fill out the form below and I'll get back to you.</p>
+        </div>
+
+        <!-- ID selector: #contact-form -->
+        <form id="contact-form" action="#" method="post">
+
+          <!-- Name field (Mandatory) -->
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Enter your full name"
+              required
+            />
+          </div>
+
+          <!-- Email field (Mandatory) -->
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+
+          <!-- Subject field -->
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              placeholder="What is this about?"
+            />
+          </div>
+
+          <!-- Message field (Mandatory) -->
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              placeholder="Write your message here..."
+              required
+            ></textarea>
+          </div>
+
+          <!-- Submit button (Mandatory) -->
+          <button type="submit" class="btn-primary" style="width:100%; padding:14px;">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p style="font-size:1.1rem; font-weight:700; color:#fff; margin-bottom:6px;">Ishant</p>
+    <p style="font-size:0.88rem; margin-bottom:10px;">Class 10th B | Roll No. 6 | SoSE (HE21), Lajpat Nagar, Delhi</p>
+    <ul class="social-links">
+      <li><a href="https://github.com" target="_blank">GitHub</a></li>
+      <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+    <p style="font-size:0.82rem; margin-top:8px;">
+      &copy; 2025 Ishant. Built with <span style="color:#e53935;">&#9829;</span> using HTML &amp; CSS.
+    </p>
+  </footer>
+
+</body>
+</html>

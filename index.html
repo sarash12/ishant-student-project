@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ishant | Personal Portfolio</title>
+
+  <!-- External CSS (Mandatory) -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Nunito:wght@400;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════
+       HEADER & NAVIGATION
+       Semantic tag: <header>, <nav>
+  ════════════════════════════════════ -->
+  <header>
+    <nav>
+      <!-- ID selector: #logo -->
+      <a href="index.html" id="logo">Ish<span>ant</span></a>
+
+      <!-- Unordered list for nav links -->
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">More</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ═══════════════════════════════════
+       HERO SECTION
+       Semantic tag: <section>
+  ════════════════════════════════════ -->
+  <section id="hero">
+    <!-- img tag with alt attribute (Mandatory) -->
+    <img
+      src="https://api.dicebear.com/7.x/initials/svg?seed=Ishant&backgroundColor=1a237e&textColor=00bcd4"
+      alt="Ishant - Portfolio Avatar"
+      class="avatar"
+    />
+    <h1>Hi, I'm <span>Ishant</span> 👋</h1>
+    <p>
+      Class 10th Student at <strong>SoSE, Lajpat Nagar</strong> | Aspiring Web Developer | Tech Enthusiast<br />
+      Building cool things with HTML &amp; CSS, one line at a time.
+    </p>
+    <a href="#about" class="btn-primary">Know More</a>
+    <a href="contact.html" class="btn-secondary">Contact Me</a>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       ABOUT SECTION
+       Semantic tags: <section>, <article>
+  ════════════════════════════════════ -->
+  <section id="about">
+    <div class="inner">
+      <article class="about-text">
+        <div class="section-title" style="text-align:left;">
+          <h2>About <span class="text-accent">Me</span></h2>
+        </div>
+        <h3>Hello! I'm Ishant.</h3>
+        <p>
+          I am a student of <span class="highlight">Class 10th B</span> with Roll No.
+          <span class="highlight">6</span>. I have a strong interest in technology,
+          web development, and creative design. I love exploring how websites are built
+          and how good design can improve the way people use technology.
+        </p>
+        <p>
+          In my free time, I enjoy coding small projects, learning new tech tools,
+          and exploring digital design. I believe technology has the power to solve
+          real-world problems, and I want to be part of that journey.
+        </p>
+
+        <!-- TABLE: Personal Details (Mandatory HTML element) -->
+        <table class="details-table">
+          <thead>
+            <tr>
+              <th>Detail</th>
+              <th>Information</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Name</td>
+              <td>Ishant</td>
+            </tr>
+            <tr>
+              <td>Class</td>
+              <td>10th B</td>
+            </tr>
+            <tr>
+              <td>Roll No.</td>
+              <td>6</td>
+            </tr>
+            <tr>
+              <td>School</td>
+              <td>Dr. B.R. Ambedkar School of Specialized Excellence (HE21), Lajpat Nagar</td>
+            </tr>
+            <tr>
+              <td>Interests</td>
+              <td>Web Development, App Design, Technology</td>
+            </tr>
+            <tr>
+              <td>Location</td>
+              <td>Delhi, India</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       EDUCATION SECTION
+       Ordered list (<ol>) — Mandatory
+  ════════════════════════════════════ -->
+  <section id="education">
+    <div class="inner">
+      <div class="section-title">
+        <h2>My <span class="text-accent">Education</span></h2>
+        <p>My academic journey so far</p>
+      </div>
+
+      <!-- Ordered list for education -->
+      <ol class="edu-list">
+        <li>
+          <h3>Primary School</h3>
+          <p>Classes 1–5 | Completed foundational education with excellent grades.</p>
+          <p class="text-accent mt-8"><strong>2015 – 2020</strong></p>
+        </li>
+        <li>
+          <h3>Middle School</h3>
+          <p>Classes 6–8 | Developed interest in Science, Maths and Computers.</p>
+          <p class="text-accent mt-8"><strong>2020 – 2023</strong></p>
+        </li>
+        <li>
+          <h3>Secondary School — Class 9th</h3>
+          <p>Studied core subjects including Digital Media Design &amp; Coding.</p>
+          <p class="text-accent mt-8"><strong>2023 – 2024</strong></p>
+        </li>
+        <li>
+          <h3>Secondary School — Class 10th</h3>
+          <p>Current year | Focus on Web Development, CSS, and project-based learning.</p>
+          <p class="text-accent mt-8"><strong>2024 – 2025</strong></p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       SKILLS SECTION
+       Unordered list (<ul>) — Mandatory
+  ════════════════════════════════════ -->
+  <section id="skills">
+    <div class="inner">
+      <div class="section-title">
+        <h2>My <span class="text-accent">Skills</span></h2>
+        <p>Technologies and tools I have learned</p>
+      </div>
+
+      <!-- Unordered list for skills (hover effect applied via CSS) -->
+      <ul class="skills-grid">
+        <li><span class="skill-icon">🌐</span> HTML5</li>
+        <li><span class="skill-icon">🎨</span> CSS3</li>
+        <li><span class="skill-icon">📱</span> Responsive Design</li>
+        <li><span class="skill-icon">🖌️</span> UI/UX Design</li>
+        <li><span class="skill-icon">✏️</span> Figma</li>
+        <li><span class="skill-icon">📊</span> MS Office</li>
+        <li><span class="skill-icon">🔍</span> Problem Solving</li>
+        <li><span class="skill-icon">💡</span> Creative Thinking</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       GALLERY SECTION
+       <img> tags with alt attributes
+  ════════════════════════════════════ -->
+  <section id="gallery">
+    <div class="inner">
+      <div class="section-title">
+        <h2>My <span class="text-accent">Gallery</span></h2>
+        <p>Projects, moments, and inspirations</p>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Images with alt attribute (Mandatory) — hover effect via CSS -->
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=200&fit=crop"
+            alt="Web Development - coding on laptop"
+          />
+          <p class="gallery-caption">Web Development</p>
+        </div>
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1558655146-9f40138edfeb?w=400&h=200&fit=crop"
+            alt="UI Design - design tools and wireframes"
+          />
+          <p class="gallery-caption">UI/UX Design</p>
+        </div>
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1555066931-4365d14431b9?w=400&h=200&fit=crop"
+            alt="Coding project - code on screen"
+          />
+          <p class="gallery-caption">Coding Projects</p>
+        </div>
+        <div>
+          <img
+            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=400&h=200&fit=crop"
+            alt="Team collaboration - students working together"
+          />
+          <p class="gallery-caption">Collaboration</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       CONTACT PREVIEW (links to contact.html)
+  ════════════════════════════════════ -->
+  <section id="contact-section">
+    <div class="inner">
+      <div class="section-title">
+        <h2>Get In <span class="text-accent">Touch</span></h2>
+        <p>Have a question or want to connect?</p>
+      </div>
+      <div class="card text-center">
+        <p>Feel free to reach out to me through the contact page. I'd love to hear from you!</p>
+        <br />
+        <!-- External link (Mandatory <a> tag) -->
+        <a href="contact.html" class="btn-primary">Go to Contact Page</a>
+        <!-- Social media / external links -->
+        <br /><br />
+        <a href="https://github.com" target="_blank" class="btn-secondary">GitHub</a>
+        <a href="https://linkedin.com" target="_blank" style="margin-left:12px;" class="btn-secondary">LinkedIn</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       FOOTER
+       Semantic tag: <footer>
+  ════════════════════════════════════ -->
+  <footer>
+    <p style="font-size:1.1rem; font-weight:700; color:#fff; margin-bottom:6px;">Ishant</p>
+    <p style="font-size:0.88rem; margin-bottom:10px;">Class 10th B | Roll No. 6 | SoSE (HE21), Lajpat Nagar, Delhi</p>
+
+    <!-- Unordered list — social links -->
+    <ul class="social-links">
+      <li><a href="https://github.com" target="_blank">GitHub</a></li>
+      <li><a href="https://linkedin.com" target="_blank">LinkedIn</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+    </ul>
+
+    <p style="font-size:0.82rem; margin-top:8px;">
+      &copy; 2025 Ishant. Built with <span style="color:#e53935;">&#9829;</span> using HTML &amp; CSS.
+    </p>
+  </footer>
+
+</body>
+</html>
